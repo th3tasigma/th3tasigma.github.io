@@ -19,7 +19,7 @@
 /*FranceTV Brown*/
 @font-face {
 	font-family: FranceTV-Brown;
-	src:url('../fonts/FranceTVBrown-Regular.truetype') format('truetype');
+	src:url('../fonts/FranceTVBrown-Regular.woff') format('woff');
 }
 
 /*Gotham black*/
