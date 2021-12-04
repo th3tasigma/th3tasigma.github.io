@@ -12,24 +12,24 @@
 
 /*Futura Canal*/
 @font-face {
-	font-family: Futura Canal;
+	font-family: Futura-Canal;
 	src:url('../fonts/FuturaCanal-Light.ttf') format('ttf');
 }
 
 /*FranceTV Brown*/
 @font-face {
-	font-family: FranceTV Brown;
+	font-family: FranceTV-Brown;
 	src:url('../fonts/FranceTVBrown-Regular.ttf') format('ttf');
 }
 
 /*Gotham black*/
 @font-face {
-	font-family: Gotham Black;
+	font-family: Gotham-Black;
 	src:url('../fonts/Gotham-Black.otf') format('otf');
 }
 
 bonjour {
-	font-family: Gotham Black;
+	font-family: Gotham-Black;
 }
 
 numero {
@@ -37,9 +37,9 @@ numero {
 }
 
 texte {
-	font-family: Futura Canal;
+	font-family: Futura-Canal;
 }
 
 texte2 {
-	font-family: FranceTV Brown;
+	font-family: FranceTV-Brown;
 }
