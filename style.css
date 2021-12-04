@@ -1,19 +1,19 @@
 /*Gotham*/
 @font-face{
   font-family: Gotham;
-  src:url('../fonts/GothamMedium.truetype') format('truetype');
+  src:url('../fonts/GothamMedium.ttf') format('truetype');
 }
 
 /*Bahnschrift*/
 @font-face {
 	font-family: Bahnschrift;
-	src:url('../fonts/bahnschrift.truetype') format('truetype');
+	src:url('../fonts/bahnschrift.ttf') format('truetype');
 }
 
 /*Futura Canal*/
 @font-face {
 	font-family: Futura-Canal;
-	src:url('../fonts/FuturaCanal-Light.truetype') format('truetype');
+	src:url('../fonts/FuturaCanal-Light.ttf') format('truetype');
 }
 
 /*FranceTV Brown*/
