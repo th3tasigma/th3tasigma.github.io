@@ -7,7 +7,7 @@
 /*Bahnschrift*/
 @font-face {
 	font-family: Bahnschrift;
-	src:url('../fonts/bahnschrift.ttf') format('truetype');
+	src:url('../fonts/bahnschrift.woff') format('woff');
 }
 
 /*Futura Canal*/
