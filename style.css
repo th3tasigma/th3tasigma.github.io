@@ -90,7 +90,7 @@ caption {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: auto;
     background-color: white;
     color: #000;
     text-align: center;
