@@ -60,6 +60,7 @@ th {
 
 td {
     text-align: center;
+	vertical-align: center;
 }
 
 tr:nth-child(even) {
@@ -80,3 +81,49 @@ caption {
 	height: 620px;
 	border: 1px solid #000;
 }
+
+.tooltip
+{
+  text-decoration:none;
+  position:relative;
+}
+ 
+ 
+.tooltip span
+{
+  display:none;
+ 
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  color:black;
+  background:white; 
+}
+ 
+ 
+.tooltip span img
+{
+  float:left;
+  margin:0px 8px 8px 0;
+}
+ 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+ 
