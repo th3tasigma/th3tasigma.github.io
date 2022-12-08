@@ -55,5 +55,20 @@ document.getElementById("bonjour").innerHTML = text;
 		</td>
 	</tr>
 </table>	
-</body>
+<script type="text/javascript">//<![CDATA[
+        var tooltip = document.querySelectorAll('.tooltiptext');
+        var listecouv = document.querySelectorAll('.tooltip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+    for (var i=tooltip.length;i--;) {
+        offsetX = listecouv[i].getBoundingClientRect().left;
+        offsetY = listecouv[i].getBoundingClientRect().top;
+        tooltip[i].style.left = e.clientX-offsetX + 'px';
+        tooltip[i].style.top = e.clientY-offsetY + 'px';
+    }
+}
+    //]]></script>
+	</body>
 </html>
