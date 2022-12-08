@@ -112,7 +112,9 @@ caption {
     
     /* Position the tooltip */
 	margin-top:12px;
-	margin-left:32px;
+	margin-left:12px;
+	/* margin-bottom:12px; */
+	/* margin-right:32px; */
     position: absolute;
     z-index: 1000;
     top: 0;

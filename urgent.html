@@ -65,8 +65,21 @@ function fn(e) {
     for (var i=tooltip.length;i--;) {
         offsetX = listecouv[i].getBoundingClientRect().left;
         offsetY = listecouv[i].getBoundingClientRect().top;
-        tooltip[i].style.left = e.clientX-offsetX + 'px';
-        tooltip[i].style.top = e.clientY-offsetY + 'px';
+		offsetmaxX = listecouv[i].getBoundingClientRect().right;
+		offsetmaxY = listecouv[i].getBoundingClientRect().bottom;
+		if ((e.clientY+tooltip[i].offsetHeight)>(window.innerHeight)){
+			tooltip[i].style.left = e.clientX-offsetX + 'px';
+			tooltip[i].style.top = e.clientY-offsetY-tooltip[i].offsetHeight + 'px';
+		<!-- } else if (boolean((e.clientY-tooltip[i].offsetHeight)<0)&&boolean((e.clientY+tooltip[i].offsetHeight)>(window.innerHeight))){ -->
+			<!-- tooltip[i].style.left = e.clientX-offsetX + 'px'; -->
+			<!-- tooltip[i].style.top = e.clientY-offsetY-(tooltip[i].offsetHeight/2) + 'px'; -->
+		<!-- } else if ((boolean((e.clientX+tooltip[i].offsetWidth)>(window.innerWidth))&&boolean((e.clientY-tooltip[i].offsetHeight)<0))){ -->
+			<!-- tooltip[i].style.left = e.clientX-offsetX-tooltip[i].offsetWidth + 'px'; -->
+			<!-- tooltip[i].style.top = e.clientY-offsetY + 'px'; -->
+		} else {
+			tooltip[i].style.left = e.clientX-offsetX + 'px';
+			tooltip[i].style.top = e.clientY-offsetY + 'px';
+		}
     }
 }
     //]]></script>
