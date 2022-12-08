@@ -61,7 +61,9 @@ th {
 td {
     text-align: center;
 	vertical-align: center;
+	width:max-content;
 }
+
 
 tr:nth-child(even) {
     background-color: #eee;
@@ -80,6 +82,15 @@ caption {
 	width: 800px;
 	height: 620px;
 	border: 1px solid #000;
+}
+
+.listecouv {
+	justify-content:center;
+	display:inline-flex;
+	flex-flow: row wrap; 
+	max-width:350px;
+	gap:1em;
+	flex-shrink:1;
 }
 
 .tooltip {
