@@ -93,6 +93,12 @@ caption {
 	flex-shrink:1;
 }
 
+.valide {
+	position: absolute;
+	top: 1.5px;
+	left: 1.5px;
+}
+
 .tooltip {
     position: relative;
     display: block;
