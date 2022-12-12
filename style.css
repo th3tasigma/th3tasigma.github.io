@@ -28,6 +28,19 @@
 	src:url('../fonts/Gotham-Black.woff') format('woff');
 }
 
+/*alarm-clock*/
+@font-face {
+	font-family: alarm-clock;
+	src:url('../fonts/alarm-clock.woff') format('woff');
+}
+
+/*DS-Digital*/
+@font-face {
+	font-family: DS-Digital;
+	font-weight: bold;
+	src:url('../fonts/ds-digit.woff') format('woff'):
+}
+
 bonjour {
 	font-family: Gotham-Black;
 }
@@ -42,6 +55,12 @@ texte {
 
 texte2 {
 	font-family: FranceTV-Brown;
+}
+
+hora {
+	font-family: DS-Digital;
+	color: red;
+	font-style: italic;
 }
 
 table {
