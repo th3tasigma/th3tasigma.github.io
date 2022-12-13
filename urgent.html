@@ -186,10 +186,17 @@ document.getElementById("bonjour").innerHTML = text;
 	dateiso = new Date (+aa, +mm -1, +jj);
 	mnt = new Date();
 	an = mnt.getFullYear();
+	mo = mnt.getMonth();
+	jo = mnt.getDate();
 	datec = new Date(+an, +mm-1,+jj);
 	bissiso = new Date(+aa, 1, 29).getMonth() == 1;
-	bissc = new Date(+an, 1, 29).getMonth() == 1;
-	ecart[d].innerHTML = "Il y a "+Math.trunc(((Date.now()-dateiso.getTime())/31556952000))+" ans et "+Math.trunc((Date.now()-datec.getTime())/86400000)+" jours ("+Math.trunc(((Date.now()-dateiso.getTime())/86400000))+" jours)";
+	bissc = new Date(+an, 1, 29).getMonth() == 2;
+	bissr = new Date(+aa, +mo, +jo);
+	if (bissiso && bissc){
+	ecart[d].innerHTML = "Il y a "+Math.trunc(((Date.now()-dateiso.getTime())/31556952000))+" ans et "+((((Math.trunc((bissr.getTime()-dateiso.getTime())/86400000))%366)+366)%366)+" jours ("+Math.trunc(((Date.now()-dateiso.getTime())/86400000))+" jours)";
+	} else {
+	ecart[d].innerHTML = "Il y a "+Math.trunc(((Date.now()-dateiso.getTime())/31556952000))+" ans et "+((((Math.trunc((Date.now()-datec.getTime())/86400000))%365)+365)%365)+" jours ("+Math.trunc(((Date.now()-dateiso.getTime())/86400000))+" jours)";
+	}
 	}
 
 document.addEventListener('mousemove', fn, false);
