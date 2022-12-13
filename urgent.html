@@ -13,10 +13,11 @@
 </head>
 <body>
 <p><texte>Dernière mise à jour :</texte></p>
-<hora><b><i><p id="bonjour" style="background-color:black;max-width:fit-content;padding:5px;"></p></i></b></hora>
+<hora><p id="bonjour" style="background-color:black;max-width:fit-content;padding:5px;"></p></hora>
 <script>
 let text = document.lastModified;
-document.getElementById("bonjour").innerHTML = text;
+let datelm = new Date(text);
+document.getElementById("bonjour").innerHTML = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'short', timeStyle: 'long', timeZone: 'Europe/Paris' }).format(datelm) + " ("+new Intl.DateTimeFormat('fr-FR', { dateStyle: 'short', timeStyle: 'long', timeZone: 'UTC' }).format(datelm)+")" ;
 </script>
 <bonjour><h1>Bonjour Bonsoir !</h1></bonjour>
 <texte><p>Encore une autre page, oui je comprends ça commence à faire beaucoup. Mais celle-ci a une fonction toute particulière, elle est surtout pour moi.</p></texte>
