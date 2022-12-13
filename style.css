@@ -37,8 +37,7 @@
 /*DS-Digital*/
 @font-face {
 	font-family: DS-Digital;
-	font-weight: bold;
-	src:url('../fonts/ds-digit.woff') format('woff'):
+	src:url('../fonts/ds-digit-bold-italic.woff') format('woff');
 }
 
 bonjour {
@@ -60,7 +59,6 @@ texte2 {
 hora {
 	font-family: DS-Digital;
 	color: red;
-	font-style: italic;
 }
 
 table {
