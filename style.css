@@ -105,7 +105,10 @@ caption {
 	justify-content:center;
 	display:inline-flex;
 	flex-flow: row wrap; 
-	max-width:350px;
+	/* display: grid; */
+	/* grid-template-columns: auto auto auto auto auto; */
+	/* column-gap:1em; */
+	/* row-gap: 1em; */
 	gap:1em;
 	flex-shrink:1;
 }
@@ -124,7 +127,7 @@ caption {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: auto;
+    width: max-content;
     background-color: white;
     color: #000;
     text-align: center;
@@ -136,8 +139,8 @@ caption {
     /* Position the tooltip */
 	margin-top:12px;
 	margin-left:12px;
-	/* margin-bottom:12px; */
-	/* margin-right:32px; */
+	margin-bottom:12px;
+	margin-right:12px;
     position: absolute;
     z-index: 1000;
     top: 0;
