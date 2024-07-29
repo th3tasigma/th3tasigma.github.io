@@ -40,6 +40,15 @@
 	src:url('../fonts/ds-digit-bold-italic.woff') format('woff');
 }
 
+doute {
+	opacity: 0.5;
+}
+
+doute:hover {
+	opacity: 1;
+}
+
+
 bonjour {
 	font-family: Gotham-Black;
 }
